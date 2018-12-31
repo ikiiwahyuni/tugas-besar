@@ -1,0 +1,243 @@
+body {
+        background-image : url(iki.jpg);
+        background-size : cover;
+        margin: 100px 50px 100px 50px;
+}
+h1{
+    position: relative;
+    margin-left: 20px;
+    font-style: oblique;
+    font-size: 40pt;
+    color: #ff8223;
+    font-family: 'header';
+    
+}
+@font-face{
+    font-family: header;
+    scr: url(Inkfree.ttf);
+}
+
+.wrap{
+	width: 950px;
+        margin: auto;
+        background-color:rgba(100,106,106,0.6);
+        border-radius: 10px;
+}
+/*header*/
+.header{
+        height: 5px;
+        background: transparent;
+        margin-bottom: 10%;
+}
+form{
+    width:500px;
+    margin-left: 650px ;
+    padding-top: 50px; 
+}
+.search {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:2px solid #dbdbdb;
+    
+}
+.button {
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #53bd84;
+    background-color:#4d64f9;
+    color:#fafafa;
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+/*akhir header*/
+
+/*menu*/
+.wrap .menu{
+	background-color:rgba(50, 50, 50, 0.2);
+}
+.wrap .menu ul{
+	padding: 5px;
+	margin-left: 10px;
+	background:transparent;
+	overflow: hidden;
+}
+.wrap .menu ul li{
+	float: left;
+	list-style-type: none;              ;
+	padding: 5px;   
+}
+/*akhir menu*/
+
+.clear{
+	clear: both;
+}
+
+.badan{
+        background-color: whitesmoke;
+        height: 950px;
+}
+/*sidebar*/
+.badan .fa {
+	float: next;	
+	width: 25%;
+}
+.fa{
+  font-size:  10pt;
+  width: 10pt;
+  text-align: center; 
+}
+
+.fa-facebook{
+  background: #3B5998;
+  padding: 8px 180px 8px 15px;
+  margin-left: 8px;
+}
+.fa-facebook:hover  {
+    background-color:#fafafa;
+    color:#3B5998;
+}
+.fa-twitter {
+  background: #55ACEE;
+  padding: 8px 180px 8px 15px;
+  margin-left: 8px;
+}
+.fa-twitter:hover  {
+    background-color:#fafafa;
+    color:#49e0ff;
+}
+
+.fa-google {
+  background: #dd4b39;
+  padding: 8px 180px 8px 15px;
+  margin-left: 8px;
+}
+.fa-google:hover  {
+    background-color:#fafafa;
+    color:#f72a3b;
+}
+
+.fa-instagram {
+  background: #125688;
+  padding: 8px 180px 8px 15px;
+  margin-left: 8px;
+}
+.fa-instagram:hover  {
+    background-color:#fafafa;
+    color:#000000;
+}
+
+.img1 {
+    padding: 8px 180px 8px 15px;
+    margin-left: 54px;
+}
+/*akhir sidebar*/
+
+.wrap .badan .content{
+        background: black;
+	float: left;
+        width: 75%;
+	height: 950px;	
+        font-size: 15pt;
+}
+h2{
+    font-size: 20pt;
+    color: #ff8223;
+    margin-left: 10px;
+    padding-top: 10px;
+   
+}
+h3{
+    font-size: 15pt;
+    color: #ff8223;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+h4{
+    font-family: initial;
+    font-size: 12pt;
+    margin-left: 10px;
+    color: #e2edff;
+}
+img{
+   margin-left: 200px; 
+   padding-top: 30px;
+}
+h5,h6{
+    font-family: inherit;
+    font-size: 11pt;
+    margin-left: 10px;
+    color: #e2edff;
+}
+.table1{
+    width: 600px;
+    margin-left: 160px;
+    border:#fafafa;
+}
+.td1{
+    text-align: left;
+    color: #ff8223;
+}
+.footer .form1{
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+//responsive
+@media only screen and(max-width:1024px){
+    body ,h1 ,fa ,table1,footer ,td1{
+        width:80px;
+    }
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
